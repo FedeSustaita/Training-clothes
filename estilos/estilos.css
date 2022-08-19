@@ -28,6 +28,7 @@
 
 h1{
     text-align: center;
+    margin: 20px;
 }
 
 /*edicion del navegador*/
@@ -224,4 +225,12 @@ i{
     .card{
         width: 50%;
     }
+}
+
+/*showroom*/
+.show-h2{
+    margin: 10px;
+}
+.show-p{
+    margin: 10px;
 }
