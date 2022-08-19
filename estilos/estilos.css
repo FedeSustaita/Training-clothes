@@ -1,0 +1,88 @@
+*{
+    background-color: rgb(19, 19, 19);
+    color: white;
+}
+
+img{
+    width: 200px;
+}
+
+h1{
+    text-align: center;
+}
+
+/*edicion del navegador*/
+.navbar{
+    padding: 0 !important;
+}
+
+.navbar-brand{
+    margin-right: 100px;
+}
+
+.nav-link{
+    color: white !important;
+}
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+/*fin edicion del navegador*/
+
+h2{
+    text-align: center;
+}
+
+.d-block{   /*imagen carrusel*/
+    width: 50%;
+    margin-bottom: 40px;
+    margin-left: 20%;
+}
+
+/*edicion de las 3 imagenes*/
+.row-cols-1{    
+    margin: 20px;
+}
+
+.card{
+    width: 300px;
+}
+
+.col{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 0 !important;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.row-cols-lg-3{
+   width: 100%;
+   margin: 0;
+}
+/*fin edicion de las 3 imagenes*/
+
+h3{
+    text-align: start;
+}
+
+.col-lg-4{  /*imagen aside*/
+    text-align: center;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+/*Footer*/
+.col-12 {
+    display: flex;
+    justify-content: center;
+}
+
+i{
+    margin: 10px;
+    font-size: 25px;
+}
