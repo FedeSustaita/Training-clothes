@@ -3,8 +3,27 @@
     color: white;
 }
 
-img{
-    width: 200px;
+.navbar-brand img{
+    width: 30%;
+    animation-name: logo;
+    animation-duration: 1.0s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: none;
+    animation-play-state: running;
+}
+
+@keyframes logo {
+    0% {
+        transform: scale(.5);
+    }
+
+    50% {
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
 }
 
 h1{
@@ -17,28 +36,64 @@ h1{
 }
 
 .navbar-brand{
-    margin-right: 100px;
+    width: 60%;
 }
 
 .nav-link{
     color: white !important;
 }
+
 .navbar-nav{
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
+
 /*fin edicion del navegador*/
+.fa-circle-arrow-up{
+    position: fixed;
+    top: 90% ;
+    left: 95%;
+    z-index: 2;
+}
+.fa-circle-arrow-up:hover{
+    color: rgba(255, 255, 255, 0.233);
+    animation-name: circle;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: none;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+        color: white;
+    }
+
+    50% {
+        color: #555555;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        color: #777777;
+    }
+}
 
 h2{
     text-align: center;
 }
 
-.d-block{   /*imagen carrusel*/
+/*imagen carrusel*/
+.d-block{   
     width: 50%;
     margin-bottom: 40px;
-    margin-left: 20%;
+    margin-left: 25%;
 }
+
 
 /*edicion de las 3 imagenes*/
 .row-cols-1{    
@@ -46,7 +101,11 @@ h2{
 }
 
 .card{
-    width: 300px;
+    width: 65%;
+    transition: all 0.4s;
+}
+.card:hover{
+    width: 70%;
 }
 
 .col{
@@ -62,8 +121,9 @@ h2{
 
 .row-cols-lg-3{
    width: 100%;
-   margin: 0;
+   margin: 0 !important;
 }
+
 /*fin edicion de las 3 imagenes*/
 
 h3{
@@ -75,6 +135,9 @@ h3{
     align-self: center;
     margin-bottom: 20px;
 }
+.col-lg-4 img{
+    width: 65%;
+}
 
 /*Footer*/
 .col-12 {
@@ -84,5 +147,81 @@ h3{
 
 i{
     margin: 10px;
-    font-size: 25px;
+    font-size: 30px;
+    transition: all 0.3s;
+    border-radius: 9px;
+}
+
+.fa-facebook:hover{
+    color: #4267B2;
+}
+
+.fa-instagram:hover{
+    background: rgb(64,93,230);
+    background: linear-gradient(180deg, rgba(64,93,230,1) 0%, rgba(225,48,108,1) 35%, rgba(252,175,69,1) 100%);
+}
+
+.fa-whatsapp:hover{
+    color: #25D366;
+}
+
+/*medias querys*/
+@media screen and (max-width:320px){      /*telefonos de pantallas finas en modo vertical*/
+
+    .navbar-brand img{
+        width: 60%;
+    }
+
+    .fa-circle-arrow-up{
+        top: 93%;
+        left: 85%;
+    }
+}
+@media screen and (min-width:320px) and (max-width:562px){      /*telefonos en modo vertical*/
+
+    .navbar-brand img{
+        width: 60%;
+    }
+
+    .fa-circle-arrow-up{
+        top: 93%;
+        left: 88%;
+    }
+}
+@media screen and (min-width:562px) and (max-width:600px) {     /*telefonos en modo horizontal*/
+
+    .navbar-brand img{
+        width: 60%;
+    }
+
+    .fa-circle-arrow-up{
+        top: 93%;
+        left: 90%;
+    }
+}
+@media screen and (min-width:600px) and (max-width:768px) {     /*tabletas pequeñas en modo vertical*/
+
+    .navbar-brand img{
+        width: 50%;
+    }
+
+    .fa-circle-arrow-up{
+        top: 93%;
+        left: 90%;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1000px){    /*tablets en modo vertical*/
+
+    .navbar-brand img{
+        width: 40%;
+    }
+
+    .fa-circle-arrow-up{
+        top: 93%;
+        left: 90%;
+    }
+
+    .card{
+        width: 50%;
+    }
 }
