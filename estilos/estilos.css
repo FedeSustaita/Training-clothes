@@ -229,8 +229,28 @@ i{
 
 /*showroom*/
 .show-h2{
-    margin: 10px;
+    margin: 20px;
 }
 .show-p{
-    margin: 10px;
+    margin: 0px 10px;
+}
+.show-main{
+    height: 450px;
+}
+/*contacto*/
+.contac-main{
+    height: 450px;
+}
+
+.contac-p{
+    text-align: center;
+}
+.contac-main a{
+    color: white;
+    text-decoration: none;
+}
+
+.formulario{
+    margin-top: 20px;
+    margin: 20px 0;
 }
