@@ -254,3 +254,12 @@ i{
     margin-top: 20px;
     margin: 20px 0;
 }
+/*catalogo*/
+.catalogo-h2{
+    margin: 20px;
+}
+
+.card-text{
+    display: flex;
+    justify-content: center;
+}
