@@ -8,25 +8,6 @@ img{
 
 .navbar-brand img{
     width: 30%;
-    animation-name: logo;
-    animation-duration: 1.0s;
-    animation-timing-function: ease-out;
-    animation-direction: alternate;
-    animation-iteration-count: none;
-    animation-play-state: running;
-}
-
-@keyframes logo {
-    0% {
-        transform: scale(.5);
-    }
-
-    50% {
-    }
-
-    100% {
-        transform: scale(1.0);
-    }
 }
 
 h1{
@@ -238,33 +219,27 @@ i{
     }
 }
 
-/*showroom*/
-.show-h2{
-    margin: 20px;
-}
-.show-p{
-    margin: 0px 10px;
-}
-.show-main{
-    height: 450px;
-}
-/*contacto*/
-.contac-main{
-    height: 450px;
+
+/*contacto y showroom*/
+
+.contac{
+    text-align: center;
+    margin: 50px;
 }
 
 .contac-p{
-    text-align: center;
-}
-.contac-main a{
-    color: white;
-    text-decoration: none;
+    font-size: 18px;
 }
 
-.formulario{
-    margin-top: 20px;
-    margin: 20px 0;
+.contac a{
+    color: white;
+    transition: all 0.4s;
 }
+
+.contac a:hover {
+    color: brown;
+}
+
 /*catalogo*/
 .catalogo-h2{
     margin: 20px;
