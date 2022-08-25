@@ -169,8 +169,6 @@ p{
 
 /*fin edicion de las 3 imagenes*/
 
-
-
 .col-md-4{  /*imagen aside*/
     text-align: center;
     align-self: center;
@@ -229,6 +227,12 @@ i{
 /*medias querys*/
 @media screen and (max-width:320px){      /*telefonos de pantallas finas en modo vertical*/
 
+    .d-block{   
+        width: 70%;
+        margin-bottom: 40px;
+        margin-left: 15%;
+    }
+
     .navbar-brand img{
         width: 60%;
     }
@@ -244,8 +248,18 @@ i{
         }
     }
 
+    /*contacto*/
+    p{
+        text-align: center;
+        }
 }
 @media screen and (min-width:320px) and (max-width:562px){      /*telefonos en modo vertical*/
+
+    .d-block{   
+        width: 70%;
+        margin-bottom: 40px;
+        margin-left: 15%;
+    }
 
     .navbar-brand img{
         width: 60%;
@@ -261,8 +275,18 @@ i{
             width: 50px;
         }
     }
+    /*contacto*/
+        p{
+        text-align: center;
+        }
 }
 @media screen and (min-width:562px) and (max-width:600px) {     /*telefonos en modo horizontal*/
+
+    .d-block{   
+        width: 60%;
+        margin-bottom: 40px;
+        margin-left: 20%;
+    }
 
     .navbar-brand img{
         width: 60%;
@@ -272,8 +296,18 @@ i{
         top: 93%;
         left: 90%;
     }
+    /*contacto*/
+    p{
+        text-align: center;
+    }
 }
 @media screen and (min-width:600px) and (max-width:768px) {     /*tabletas pequeñas en modo vertical*/
+
+    .d-block{   
+        width: 60%;
+        margin-bottom: 40px;
+        margin-left: 20%;
+    }
 
     .navbar-brand img{
         width: 50%;
@@ -283,6 +317,11 @@ i{
         top: 93%;
         left: 90%;
     }
+
+    /*contacto*/
+    p{
+        text-align: center;
+        }
 }
 @media screen and (min-width:769px) and (max-width:1000px){    /*tablets en modo vertical*/
 
@@ -297,6 +336,11 @@ i{
 
     .card{
         width: 50%;
+    }
+    
+    /*contacto*/
+    p{
+        text-align: center;
     }
 }
 
