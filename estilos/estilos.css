@@ -38,12 +38,27 @@ p {
 
 .navbar-brand img {
   width: 30%;
-  animation-name: logo;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-direction: alternate;
-  animation-iteration-count: none;
-  animation-play-state: running;
+  -webkit-animation-name: logo;
+          animation-name: logo;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: none;
+          animation-iteration-count: none;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes logo {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes logo {
@@ -83,13 +98,34 @@ p {
 
 .fa-circle-arrow-up:hover {
   color: rgba(255, 255, 255, 0.233);
-  animation-name: circle;
-  animation-duration: 0.4s;
-  animation-timing-function: ease-out;
-  animation-direction: alternate;
-  animation-iteration-count: none;
-  animation-play-state: running;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: circle;
+          animation-name: circle;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: none;
+          animation-iteration-count: none;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    transform: rotate(0deg);
+    color: white;
+  }
+  50% {
+    color: #555555;
+  }
+  100% {
+    transform: rotate(360deg);
+    color: #777777;
+  }
 }
 
 @keyframes circle {
@@ -218,7 +254,7 @@ i {
     width: 50px;
   }
   /*contacto*/
-  p {
+  .up-form p {
     text-align: center;
   }
 }
@@ -239,7 +275,7 @@ i {
     width: 50px;
   }
   /*contacto*/
-  p {
+  .up-form p {
     text-align: center;
   }
 }
@@ -257,7 +293,7 @@ i {
     left: 90%;
   }
   /*contacto*/
-  p {
+  .up-form p {
     text-align: center;
   }
 }
@@ -275,7 +311,7 @@ i {
     left: 90%;
   }
   /*contacto*/
-  p {
+  .up-form p {
     text-align: center;
   }
 }
@@ -291,7 +327,7 @@ i {
     width: 50%;
   }
   /*contacto*/
-  p {
+  .up-form p {
     text-align: center;
   }
 }
@@ -352,6 +388,4 @@ i {
 .card-text {
   display: flex;
   justify-content: center;
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
