@@ -13,20 +13,29 @@
     <!--inicio cdnjs-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--fin cdnjs-->
+    <!--font-->
+    <!--roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!--monserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!--fin de font-->
     <!--inicio favicon-->
     <link rel="shortcut icon" href="../img/rayoTraining.jpg" type="image/x-icon">
     <!--fin favicon-->
     <title>Document</title>
 </head>
 <body>
-  <div class="container-fluid"> <!--layout-->
-    <div class="row">
-      <div class="col-11.5">
+  <div class="grid"> <!--layout-->
+      <div class="fila-header">
         <header>
           <!--comienzo del nav-->
             <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
               <div class="container-fluid">
-                <a class="navbar-brand" href="#">          
+                <a class="navbar-brand" href="../index.html">          
                   <img src="../img/logotraining.png" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,17 +51,19 @@
                         Catalogo
                       </a>
                       <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item bg-light" href="../contenido/catalogo.html#remera">Remeras</a></li>
-                        <li><a class="dropdown-item bg-light" href="../contenido/catalogo.html#buzo">Buzos</a></li>
-                        <li><a class="dropdown-item bg-light" href="../contenido/catalogo.html">Shorts</a></li>
-                        <li><a class="dropdown-item bg-light" href="../contenido/catalogo.html">Medias</a></li>
-                      </ul>
+                          <li><a class="dropdown-item bg-light" href="../contenido/catalogo.html">catalogo</a></li>
+                          <li><a class="dropdown-item bg-light" href="../contenido/catalogo.html#remera">Remeras</a></li>
+                          <li><a class="dropdown-item bg-light" href="../contenido/catalogo.html#buzo">Buzos</a></li>
+                          <li><a class="dropdown-item bg-light" href="../contenido/catalogo.html">Shorts</a></li>
+                          <li><a class="dropdown-item bg-light" href="../contenido/catalogo.html">Medias</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Showroom
                       </a>
                       <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item bg-light" href="../contenido/showroom.html">Showroom</a></li>
                         <li><a class="dropdown-item bg-light" href="../contenido/showroom.html#envios">Envios</a></li>
                         <li><a class="dropdown-item bg-light" href="../contenido/showroom.html#metoP">Metodos de pago</a></li>
                       </ul>
@@ -65,54 +76,73 @@
               </div>
             </nav>
             <!--fin del nav-->
-          </header>
+        </header>
+        <hr>
+      </div>
+      <div class="fila-main">
           <!--comienzo del contenido central-->
           <main class="show-main">
-            <h1>
-                Showroom
-            </h1>
-            <p class="show-p">
-                Este Showroom fue creado en el momento de la pandemia (2020), atravez de la inversion de 3 personas. Nuestra idea fue vender ropa deportiva de muy buena calidad a un precio accesible para que las personas puedan disfrutar de sus entrenamientos sin la necesidad de pagar una fortuna por cada prenda. ofreciendo envios para que las personas puedan recibir el producto sin la necesidad de salir de su casa.
-            </p>
-            <h2 class="show-h2" id="envios">
-                ENVIOS
-            </h2>
-            <p class="show-p">
-                Estamos de lunes a viernes con envíos a domicilio 🛵 o retiros en Barrio Las Marías (yb) 📍, horarios a acordar! También podes escribirnos por WhatsApp! <br>
-                📲 38159---- (Maxi) <br>
-                📲 38159---- (Ale)
-            </p>
-            <h2 class="show-h2" id="metoP">
+            <div class="colum1">
+              <h1 id="showroom">
+                  Showroom
+              </h1>
+              <p class="show-p">
+                  Este Showroom fue creado en el momento de la pandemia (2020), atravez de la inversion de 3 personas. Nuestra idea fue vender ropa deportiva de muy buena calidad a un precio accesible para que las personas puedan disfrutar de sus entrenamientos sin la necesidad de pagar una fortuna por cada prenda. ofreciendo envios para que las personas puedan recibir el producto sin la necesidad de salir de su casa.
+              </p>
+            </div>
+            <div class="colum2">
+              <h2 class="show-h2" id="envios">
+                  ENVIOS
+              </h2>
+              <p class="show-p">
+                  Estamos de lunes a viernes con envíos a domicilio 🛵 o retiros en Barrio Las Marías (yb) 📍, horarios a acordar! También podes escribirnos por WhatsApp! <br> <br>
+                  📲 38159---- (Maxi) <br>
+                  📲 38159---- (Ale)
+              </p>
+            </div>
+            <div class="colum3">
+              <h2 class="show-h2" id="metoP">
                 METODO DE PAGO
-            </h2>
-            <p class="show-p">
-                Efectivo <br> 
-                Transferencia bancaria <br> 
-                Deposito <br> 
-                Posnet de Mercado Pago 
-            </p>
+              </h2>
+              <p class="show-p">
+                <ul>
+                  <li>Efectivo</li>
+                  <li>Transferencia bancaria</li>
+                  <li>Deposito</li>
+                  <li>Posnet de Mercado Pago</li>
+                </ul>
+              </p>
+            </div>
           </main>   
           <!--fin del contenido principal-->
+      </div>
+      <div class="fila-footer">
           <!--inicio del footer-->
+          <hr>
           <footer>
             <div class="container-fluid">
               <div class="row">
-                <div class="col-12">
+                <div class="col-2">
+                  <img src="../img/logo completo.png" alt="logo completo">
+                </div>
+                <div class="col-8">
                   <h2>
                     Visita nuestras redes
                   </h2>
-                </div>
-                <div class="col-12">
-                  <a href="https://www.facebook.com/Training-Clothes-110452830682138/" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
-                  <a href="https://instagram.com/training_clothes_tuc?igshid=YmMyMTA2M2Y=" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
-                  <a href="https://wa.me/38154" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
+                  <div class="redes">
+                    <a href="https://www.facebook.com/Training-Clothes-110452830682138/" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
+                    <a href="https://instagram.com/training_clothes_tuc?igshid=YmMyMTA2M2Y=" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/38154" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
+            <p>
+              Copyright 2022 ©
+            </p>
           </footer>
       <!--fin del footer-->
       </div>
-    </div>
   </div>
       <!--script-->
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

@@ -13,15 +13,24 @@
     <!--inicio cdnjs-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--fin cdnjs-->
+    <!--font-->
+    <!--roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!--monserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!--fin de font-->
     <!--inicio favicon-->
     <link rel="shortcut icon" href="./img/rayoTraining.jpg" type="image/x-icon">
     <!--fin favicon-->
     <title>Document</title>
 </head>
 <body>
-  <div class="container-fluid"> <!--layout-->
-    <div class="row">
-      <div class="col-11.5">
+  <div class="grid"> <!--layout-->
+      <div class="fila-header">
         <header>
           <!--comienzo del nav-->
           <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -42,6 +51,7 @@
                       Catalogo
                     </a>
                     <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item bg-light" href="./contenido/catalogo.html">catalogo</a></li>
                       <li><a class="dropdown-item bg-light" href="./contenido/catalogo.html#remera">Remeras</a></li>
                       <li><a class="dropdown-item bg-light" href="./contenido/catalogo.html#buzo">Buzos</a></li>
                       <li><a class="dropdown-item bg-light" href="./contenido/catalogo.html">Shorts</a></li>
@@ -53,6 +63,7 @@
                       Showroom
                     </a>
                     <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item bg-light" href="./contenido/showroom.html">Showroom</a></li>
                       <li><a class="dropdown-item bg-light" href="./contenido/showroom.html#envios">Envios</a></li>
                       <li><a class="dropdown-item bg-light" href="./contenido/showroom.html#metoP">Metodos de pago</a></li>
                     </ul>
@@ -66,8 +77,9 @@
           </nav>
           <!--fin del nav-->
         </header>
+        <hr>
       </div>
-      <div class="col-11.5">
+      <div class="fila-main">
   <!--comienzo del contenido central-->
         <main>
           <a href="#top"><i class="fa-solid fa-circle-arrow-up"></i></a>
@@ -84,13 +96,19 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="./img/FotoMedias.jpg" class="d-block" alt="...">
+                  <img src="./img/FotoMedias.jpg" class="d-block" alt="foto de todas las medias">
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/seg foto carrusel.jpg" class="d-block" alt="...">
+                  <img src="./img/seg foto carrusel.jpg" class="d-block" alt="foto medias negras con botines">
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/terc foto carrusel.jpg" class="d-block" alt="...">
+                  <img src="./img/foto espalda rojo negro.jpg" class="d-block" alt="foto espalda rojo negro">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/terc foto carrusel.jpg" class="d-block" alt="foto medias negras descalzo">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/foto espalda rojo.JPG" class="d-block" alt="foto espalda rojo">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -111,30 +129,30 @@
               <div class="col">
                 <div class="card">
                   <a href="./contenido/catalogo.html#remera">
-                    <img src="./img/fotoremera.jpg" class="card-img-top" alt="...">
+                    <img src="./img/fotoremera.jpg" class="card-img-top" alt="foto remera azul y celeste">
                   </a>
                   <div class="card-body">
-                    <h5 class="card-title"> Remeras </h5>
+                    <h3 class="card-title"> Remeras </h3>
                   </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card">
                   <a href="./contenido/catalogo.html#buzo">
-                    <img src="./img/fotobuzo.jpg" class="card-img-top" alt="...">
+                    <img src="./img/fotobuzo.jpg" class="card-img-top" alt="foto buzo amarillo, gris y negro">
                   </a>
                   <div class="card-body">
-                    <h5 class="card-title"> Buzos </h5>
+                    <h3 class="card-title"> Buzos </h3>
                   </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card">
                   <a href="./contenido/catalogo.html">
-                    <img src="./img/fotoshort.jpg" class="card-img-top" alt="...">
+                    <img src="./img/fotoshort.jpg" class="card-img-top" alt="foto short negro">
                   </a>
                   <div class="card-body">
-                    <h5 class="card-title"> Shorts </h5>
+                    <h3 class="card-title"> Shorts </h3>
                   </div>
                 </div>
               </div>
@@ -177,7 +195,7 @@
                   </p>
                 </div>
                 <div class="col-md-4">
-                  <img src="./img/fotoB.jpg" alt="">  <!--imagen aside-->
+                  <img src="./img/fotoB.jpg" alt="foto buzo amarillo, gris y negro">  <!--imagen aside-->
                 </div>
               </div>
             </div>
@@ -185,27 +203,33 @@
         </main>
   <!--fin del contenido principal--> 
       </div>
-      <div class="col-11.5">
-  <!--inicio del footer-->
-        <footer>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-12">
-                <h2>
-                  Visita nuestras redes
-                </h2>
-              </div>
-              <div class="col-12">
-                <a href="https://www.facebook.com/Training-Clothes-110452830682138/" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
-                <a href="https://instagram.com/training_clothes_tuc?igshid=YmMyMTA2M2Y=" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
-                <a href="https://wa.me/381524" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
+      <div class="fila-footer">
+          <!--inicio del footer-->
+          <hr>
+          <footer>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-2">
+                  <img src="./img/logo completo.png" alt="logo completo">
+                </div>
+                <div class="col-8">
+                  <h2>
+                    Visita nuestras redes
+                  </h2>
+                  <div class="redes">
+                    <a href="https://www.facebook.com/Training-Clothes-110452830682138/" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
+                    <a href="https://instagram.com/training_clothes_tuc?igshid=YmMyMTA2M2Y=" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/38154" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </footer>
-  <!--fin del footer-->
+            <p>
+              Copyright 2022 ©
+            </p>
+          </footer>
+      <!--fin del footer-->
       </div>
-    </div>
   </div>
   <!--script-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

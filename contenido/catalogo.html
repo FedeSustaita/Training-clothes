@@ -13,15 +13,23 @@
     <!--inicio cdnjs-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--fin cdnjs-->
-    <!--inicio favicon-->
+    <!--font-->
+    <!--roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!--monserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!--fin de font-->
     <link rel="shortcut icon" href="../img/rayoTraining.jpg" type="image/x-icon">
     <!--fin favicon-->
     <title>Document</title>
 </head>
 <body>
-  <div class="container-fluid"> <!--layout-->
-    <div class="row">
-      <div class="col-11.5">
+  <div class="grid"> <!--layout-->
+      <div class="fila-header">
         <header>
           <!--comienzo del nav-->
           <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
@@ -42,6 +50,7 @@
                       Catalogo
                     </a>
                     <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item bg-light" href="../contenido/catalogo.html">catalogo</a></li>
                       <li><a class="dropdown-item bg-light" href="../contenido/catalogo.html#remera">Remeras</a></li>
                       <li><a class="dropdown-item bg-light" href="../contenido/catalogo.html#buzo">Buzos</a></li>
                       <li><a class="dropdown-item bg-light" href="../contenido/catalogo.html">Shorts</a></li>
@@ -53,6 +62,7 @@
                       Showroom
                     </a>
                     <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item bg-light" href="../contenido/showroom.html">Showroom</a></li>
                       <li><a class="dropdown-item bg-light" href="../contenido/showroom.html#envios">Envios</a></li>
                       <li><a class="dropdown-item bg-light" href="../contenido/showroom.html#metoP">Metodos de pago</a></li>
                     </ul>
@@ -66,8 +76,9 @@
           </nav>
           <!--fin del nav-->
         </header>
+        <hr>
       </div>
-      <div class="col-11.5">
+      <div class="fila-main">
       <!--comienzo del contenido central-->
         <main>
           <a href="#top"><i class="fa-solid fa-circle-arrow-up"></i></a>
@@ -91,7 +102,7 @@
                       </div>
                       <div class="col">
                       <div class="card">
-                          <img src="../img/remera amrilla negra.jpg" class="card-img-top" alt="remera amrilla negra">
+                          <img src="../img/remera amrilla negra.jpg" class="card-img-top" alt="remera amarilla negra">
                           <div class="card-body">
                           <h5 class="card-title">Remeras</h5>
                           <p class="card-text">$3000</p>
@@ -222,30 +233,38 @@
                       </div>
                   </div>
               </div>
-          </section>  <!--fin del catalogo remeras-->
+          </section>  <!--fin del catalogo buzos-->
         </main>
         <!--fin del contenido principal-->
       </div>
-      <div class="col-11.5">
-        <!--inicio del footer-->
-        <footer>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-12">
-                <h2>
-                  Visita nuestras redes
-                </h2>
-              </div>
-              <div class="col-12">
-                <a href="https://www.facebook.com/Training-Clothes-110452830682138/" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
-                <a href="https://instagram.com/training_clothes_tuc?igshid=YmMyMTA2M2Y=" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
-                <a href="https://wa.me/381524" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
+      <div class="fila-footer">
+          <!--inicio del footer-->
+          <hr>
+          <footer>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-2">
+                  <img src="../img/logo completo.png" alt="logo completo">
+                </div>
+                <div class="col-8">
+                  <h2>
+                    Visita nuestras redes
+                  </h2>
+                  <div class="redes">
+                    <a href="https://www.facebook.com/Training-Clothes-110452830682138/" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
+                    <a href="https://instagram.com/training_clothes_tuc?igshid=YmMyMTA2M2Y=" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/38154" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </footer>
+            <p>
+              Copyright 2022 ©
+            </p>
+          </footer>
       <!--fin del footer-->
       </div>
+  </div>
       <!--script-->
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
