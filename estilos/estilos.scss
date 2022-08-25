@@ -249,9 +249,11 @@ i{
     }
 
     /*contacto*/
-    p{
-        text-align: center;
-        }
+    .col-lg-6{
+        p{
+            text-align: center;
+            }
+    }
 }
 @media screen and (min-width:320px) and (max-width:562px){      /*telefonos en modo vertical*/
 
@@ -276,9 +278,11 @@ i{
         }
     }
     /*contacto*/
+    .col-lg-6{
         p{
-        text-align: center;
-        }
+            text-align: center;
+            }
+    }
 }
 @media screen and (min-width:562px) and (max-width:600px) {     /*telefonos en modo horizontal*/
 
@@ -297,8 +301,10 @@ i{
         left: 90%;
     }
     /*contacto*/
-    p{
-        text-align: center;
+    .col-lg-6{
+        p{
+            text-align: center;
+            }
     }
 }
 @media screen and (min-width:600px) and (max-width:768px) {     /*tabletas pequeñas en modo vertical*/
@@ -319,9 +325,11 @@ i{
     }
 
     /*contacto*/
-    p{
-        text-align: center;
-        }
+    .col-lg-6{
+        p{
+            text-align: center;
+            }
+    }
 }
 @media screen and (min-width:769px) and (max-width:1000px){    /*tablets en modo vertical*/
 
@@ -339,8 +347,10 @@ i{
     }
     
     /*contacto*/
-    p{
-        text-align: center;
+    .col-lg-6{
+        p{
+            text-align: center;
+            }
     }
 }
 
