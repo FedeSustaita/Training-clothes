@@ -325,75 +325,98 @@ i {
 .show-main section .colum1, .show-main section .colum2, .show-main section .colum3, .show-main section .colum4 {
   display: flex;
   justify-content: center;
-  margin: 20px;
 }
 .show-main section .colum1-5 {
   grid-row: 1;
   grid-column: 1;
-  background: rgb(167, 0, 255);
-  background: linear-gradient(159deg, rgb(167, 0, 255) 0%, rgb(0, 212, 255) 100%);
-  height: 350px;
-  width: 400px;
+  background: rgb(33, 33, 33);
+  background: linear-gradient(313deg, rgb(30, 30, 30) 0%, rgb(20, 20, 20) 100%);
+  height: 95%;
+  width: 90%;
   border-radius: 20px;
   padding: 10px;
+  margin: 5px;
+  border: solid rgb(58, 58, 58);
 }
 .show-main section .colum1-5 p, .show-main section .colum1-5 h2, .show-main section .colum1-5 ul, .show-main section .colum1-5 li {
   color: white;
   background-color: transparent;
   text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.274);
 }
+.show-main section .colum1-5 h2 {
+  margin-top: 0%;
+  margin-bottom: 5px;
+}
 .show-main section .colum2-5 {
   grid-row: 1;
   grid-column: 2;
-  background: rgb(162, 87, 0);
-  background: linear-gradient(158deg, rgb(162, 87, 0) 0%, rgb(255, 228, 17) 100%);
-  height: 350px;
-  width: 400px;
+  background: rgb(33, 33, 33);
+  background: linear-gradient(47deg, rgb(30, 30, 30) 0%, rgb(20, 20, 20) 100%);
+  height: 95%;
+  width: 90%;
   border-radius: 20px;
   padding: 10px;
+  margin: 5px;
+  border: solid rgb(58, 58, 58);
 }
 .show-main section .colum2-5 p, .show-main section .colum2-5 h2, .show-main section .colum2-5 ul, .show-main section .colum2-5 li {
   color: white;
   background-color: transparent;
   text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.274);
 }
+.show-main section .colum2-5 h2 {
+  margin-top: 0%;
+  margin-bottom: 5px;
+}
 .show-main section .colum3-5 {
   grid-row: 2;
   grid-column: 1;
-  background: rgb(121, 218, 39);
-  background: linear-gradient(158deg, rgb(121, 218, 39) 0%, rgb(17, 210, 255) 100%);
-  height: 350px;
-  width: 400px;
+  background: rgb(33, 33, 33);
+  background: linear-gradient(230deg, rgb(30, 30, 30) 0%, rgb(20, 20, 20) 100%);
+  height: 95%;
+  width: 90%;
   border-radius: 20px;
   padding: 10px;
+  margin: 5px;
+  border: solid rgb(58, 58, 58);
 }
 .show-main section .colum3-5 p, .show-main section .colum3-5 h2, .show-main section .colum3-5 ul, .show-main section .colum3-5 li {
   color: white;
   background-color: transparent;
   text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.274);
 }
+.show-main section .colum3-5 h2 {
+  margin-top: 0%;
+  margin-bottom: 5px;
+}
 .show-main section .colum4-5 {
   grid-row: 2;
   grid-column: 2;
-  background: rgb(255, 0, 108);
-  background: linear-gradient(158deg, rgb(255, 0, 108) 0%, rgb(0, 206, 255) 100%);
-  height: 350px;
-  width: 400px;
+  background: rgb(33, 33, 33);
+  background: linear-gradient(135deg, rgb(30, 30, 30) 0%, rgb(20, 20, 20) 100%);
+  height: 95%;
+  width: 90%;
   border-radius: 20px;
   padding: 10px;
+  margin: 5px;
+  border: solid rgb(58, 58, 58);
 }
 .show-main section .colum4-5 p, .show-main section .colum4-5 h2, .show-main section .colum4-5 ul, .show-main section .colum4-5 li {
   color: white;
   background-color: transparent;
   text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.274);
 }
+.show-main section .colum4-5 h2 {
+  margin-top: 0%;
+  margin-bottom: 5px;
+}
 .show-main section .colum4-5 p {
   display: flex;
   justify-content: center;
 }
 .show-main section .colum4-5 p iframe {
-  width: 350px;
-  height: 200px;
+  width: auto;
+  height: auto;
   border-radius: 20px;
 }
 .show-main section h1, .show-main section h2, .show-main section h3 {
@@ -464,41 +487,89 @@ i {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
+    justify-content: center;
   }
   .show-main section .colum1, .show-main section .colum2, .show-main section .colum3, .show-main section .colum4 {
+    margin: 0px;
+    width: 280px !important;
     display: flex;
     justify-content: center;
-    margin: 20px;
-  }
-  .show-main section .colum1-5, .show-main section .colum2-5, .show-main section .colum3-5, .show-main section .colum4-5 {
-    height: 500px !important;
-    width: 230px !important;
-    padding: 0px;
-    margin: 0px;
-  }
-  .show-main section .colum4-5 p iframe {
-    width: 200px !important;
-    height: 300px !important;
-    border-radius: 20px;
-  }
-  .show-main section .colum1-5 {
-    grid-row: 1;
-    grid-column: 1;
-  }
-  .show-main section .colum2-5 {
-    grid-row: 2;
-    grid-column: 1;
-  }
-  .show-main section .colum3-5 {
-    grid-row: 3;
-    grid-column: 1;
-  }
-  .show-main section .colum4-5 {
-    grid-row: 4;
-    grid-column: 1;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 562px) { /*telefonos en modo vertical*/
+@media screen and (min-width: 320px) and (max-width: 346px) {
+  .d-block {
+    width: 70%;
+    margin-bottom: 40px;
+    margin-left: 15%;
+  }
+  .navbar-brand img {
+    width: 60%;
+  }
+  .fa-circle-arrow-up {
+    border-radius: 50%;
+    top: 90%;
+    left: 88%;
+  }
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    width: 100%;
+    margin: 40px 0;
+  }
+  .contenedor .conten-remera {
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor .conten-buzo {
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor .conten-short {
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor .percha {
+    margin: 10px 0;
+  }
+  .contenedor .img {
+    width: 275px;
+    height: 275px;
+  }
+  footer img {
+    width: 50px;
+  }
+  /*contacto*/
+  .up-form p {
+    text-align: center;
+  }
+  /*catalogo*/
+  .cat-contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  /*showroom*/
+  .show-main section {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .show-main section .colum1, .show-main section .colum2, .show-main section .colum3, .show-main section .colum4 {
+    margin: 0px;
+    width: 90% !important;
+    display: flex;
+    justify-content: center;
+  }
+  .show-main section .colum1-5, .show-main section .colum2-5, .show-main section .colum3-5, .show-main section .colum4-5 {
+    height: 95%;
+    width: 90%;
+    margin: 0% !important;
+  }
+  .show-main section .colum1-5 h2, .show-main section .colum2-5 h2, .show-main section .colum3-5 h2, .show-main section .colum4-5 h2 {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 346px) and (max-width: 562px) { /*telefonos en modo vertical*/
   .d-block {
     width: 70%;
     margin-bottom: 40px;
@@ -559,34 +630,16 @@ i {
   .show-main section .colum1, .show-main section .colum2, .show-main section .colum3, .show-main section .colum4 {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 0px;
+    height: 300px;
+    width: 100%;
   }
   .show-main section .colum1-5, .show-main section .colum2-5, .show-main section .colum3-5, .show-main section .colum4-5 {
-    height: 450px !important;
-    width: 280px !important;
-    padding: 0px;
-    margin: 0px;
+    height: 95%;
+    width: 90%;
   }
-  .show-main section .colum4-5 p iframe {
-    width: 250px !important;
-    height: 300px !important;
-    border-radius: 20px;
-  }
-  .show-main section .colum1-5 {
-    grid-row: 1;
-    grid-column: 1;
-  }
-  .show-main section .colum2-5 {
-    grid-row: 2;
-    grid-column: 1;
-  }
-  .show-main section .colum3-5 {
-    grid-row: 3;
-    grid-column: 1;
-  }
-  .show-main section .colum4-5 {
-    grid-row: 4;
-    grid-column: 1;
+  .show-main section .colum1-5 h2, .show-main section .colum2-5 h2, .show-main section .colum3-5 h2, .show-main section .colum4-5 h2 {
+    margin: 0;
   }
 }
 @media screen and (min-width: 562px) and (max-width: 615px) { /*telefonos en modo horizontal*/
@@ -773,13 +826,4 @@ i {
     grid-template-columns: 1fr 1fr 1fr;
   }
   /*showroom*/
-  main .colum1-5, .colum2-5, .colum3-5, .colum4-5 {
-    height: 450px;
-    width: 300px;
-  }
-  .colum4-5 p iframe {
-    width: 250px !important;
-    height: 300px !important;
-    border-radius: 20px;
-  }
 }/*# sourceMappingURL=estilos.css.map */
