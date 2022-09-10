@@ -332,7 +332,6 @@ i {
   grid-column: 1;
   background: rgb(167, 0, 255);
   background: linear-gradient(159deg, rgb(167, 0, 255) 0%, rgb(0, 212, 255) 100%);
-  color: white;
   height: 350px;
   width: 400px;
   border-radius: 20px;
@@ -774,9 +773,9 @@ i {
     grid-template-columns: 1fr 1fr 1fr;
   }
   /*showroom*/
-  .colum1-5, .colum2-5, .colum3-5, .colum4-5 {
-    height: 450px !important;
-    width: 300px !important;
+  main .colum1-5, .colum2-5, .colum3-5, .colum4-5 {
+    height: 450px;
+    width: 300px;
   }
   .colum4-5 p iframe {
     width: 250px !important;

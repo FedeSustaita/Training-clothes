@@ -59,7 +59,6 @@ p{
         animation-name: logo;
         animation-duration: 1.0s;
         @include ajuste-animaciones;
-
     }
 
         @keyframes logo {
@@ -333,14 +332,13 @@ i{
         display: flex;
         justify-content: center;
         margin: 20px;
-
     }
+    
     .colum1-5{
         grid-row: 1;
         grid-column: 1;
         background: rgb(167,0,255);
         background: linear-gradient(159deg, rgba(167,0,255,1) 0%, rgba(0,212,255,1) 100%); 
-        color: white;
         @include show-div 
     }
 
@@ -828,9 +826,9 @@ i{
     }
     /*showroom*/
 
-    .colum1-5, .colum2-5, .colum3-5, .colum4-5{
-        height: 450px !important;
-        width: 300px !important;
+    main .colum1-5, .colum2-5, .colum3-5, .colum4-5{
+        height: 450px ;
+        width: 300px ;
     }
 
     .colum4-5 p iframe{
